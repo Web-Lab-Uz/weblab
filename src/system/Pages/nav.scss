@@ -1,0 +1,50 @@
+.navbar-allPage {
+    nav {
+        padding: 15px 50px !important;
+        .navbar-brand {
+            margin-right: 0;
+            font-size: 25px;
+            color: #ffffff !important;
+            font-family: "Montserrat", sans-serif;
+        }
+        .nav {
+            margin-left: auto;
+            .nav-item {
+                margin: 20px 30px;
+                font-size: 20px;
+                font-family: "Montserrat", sans-serif;
+                a {
+                    color: #ffffff !important;
+                    text-decoration: none;
+                    transition: 0.2s ease;
+                    opacity: 0.4;
+                    height: 30px;
+                    display: inline-block;
+                    &.active {
+                        opacity: 0.8;
+                    }
+                    &::after {
+                        content: "";
+                        height: 1px;
+                        width: 0;
+                        display: block;
+                        opacity: 0;
+                        transition: 1s linear;
+                        float: right;
+                    }
+                    &:hover {
+                        opacity: 0.8;
+                        &::after {
+                            width: 70%;
+                            opacity: 1;
+                            background-color: white;
+                        }
+                    }
+                }
+            }
+        }
+        .navbar-toggler {
+            background-color: #ffffff77 !important;
+        }
+    }
+}

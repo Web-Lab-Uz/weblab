@@ -1,0 +1,26 @@
+@mixin PageTitle1 {
+    font-size: 45px;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 2px;
+    color: #fff;
+    margin: 0;
+}
+
+@mixin PageTitle2 {
+    font-size: 30px;
+    color: $homeBtnColor2;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0.7px;
+}
+
+.titles {
+    text-align: center;
+    margin-top: 75px;
+    .title1 {
+        @include PageTitle1();
+    }
+    .title2 {
+        @include PageTitle2();
+    }
+}

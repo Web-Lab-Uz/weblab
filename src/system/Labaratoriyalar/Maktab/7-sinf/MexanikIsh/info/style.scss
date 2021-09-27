@@ -1,0 +1,27 @@
+.tekistezlanuvchanharakatinfo {
+    margin: 40px 10px;
+    .infoBody {
+        background-color: #062d3f !important;
+        color: #75a589;
+        width: 100%;
+        font-family: 'Times New Roman', Times, serif;
+        .infoheader {
+            text-align: center;
+        }
+        img{
+            width: auto;
+            margin: 0 auto;
+            display: block;
+        }
+        .infobutton{
+            .infolink{
+                text-decoration: none;
+                font-size:larger;
+                color: #ffffffaa;
+                &:hover{
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,60 @@
+.container.tekistezlanuvchanharakat {
+    .row {
+        .col-md-6 {
+            .card-columns{
+                .card{
+                    margin: 10px 2%;
+                    &:nth-child(1){
+                        width: 45%;
+                        display: inline-block;
+                        .card-body{
+                            display: flex;
+                            .tugmalar-jamlanmasi{
+                                margin:0 auto;
+                                button{
+                                    border: none;
+                                    border-radius: 3px;
+                                    background-color: #0000ffbb;
+                                    color: #fff;
+                                    padding: 0 10px;
+                                    &:nth-child(2){
+                                        margin-left: 5px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &:nth-child(2){
+                        width: 45%;
+                        margin-left: 4%;
+                        display: inline-block;
+                        .card-body{
+                            display: flex;
+                            .tugmalar-jamlanmasi{
+                                margin:0 auto;
+                                button{
+                                    border: none;
+                                    border-radius: 3px;
+                                    background-color: #0000ffbb;
+                                    color: #fff;
+                                    padding: 0 10px;
+                                    &:nth-child(2){
+                                        margin-left: 5px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .natijalarmaydoni{
+                overflow: scroll;
+                width: 96%;
+                margin: 0 2%;
+                border-radius: 15px;
+                height: 250px;
+
+            }
+        }
+    }
+}
