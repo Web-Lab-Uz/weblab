@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import reportWebVitals from './reportWebVitals';
 import App from './App';
 import Footer from './system/Pages/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css'
+import './main.scss';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -13,4 +13,3 @@ ReactDOM.render(
   document.getElementById('WebLabCodes')
 );
 
-reportWebVitals();

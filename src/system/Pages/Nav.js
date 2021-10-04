@@ -47,13 +47,13 @@ export default function Home() {
                             <Link to="/">G'oya</Link>
                         </NavItem>
                         <NavItem>
-                            <Link to="/">Labaratoriyalar</Link>
+                            <Link to="/labs">Labaratoriyalar</Link>
                         </NavItem>
                         <NavItem>
-                            <Link to="/">Muloqot</Link>
+                            <Link to="/contact">Muloqot</Link>
                         </NavItem>
                         <NavItem>
-                            <Link to="/">Malumot</Link>
+                            <Link to="/about">Ma'lumot</Link>
                         </NavItem>
                     </Nav>
                 </Collapse>
