@@ -1,6 +1,6 @@
 import React from 'react'
 import Swing from 'react-reveal/Swing';
-import HomeBody from './HomeBody';
+// import HomeBody from './HomeBody';
 import Nav from '../Nav'
 
 export default function Home() {
@@ -8,7 +8,7 @@ export default function Home() {
         <>
             <Swing>
                 <Nav />
-                <HomeBody />
+                {/* <HomeBody /> */}
             </Swing>
         </>         
     )

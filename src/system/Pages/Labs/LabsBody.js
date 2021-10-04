@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { TouchAppTwoTone, VideoLabelTwoTone } from '@material-ui/icons';
 import React, { useState, useEffect } from 'react';
 import { Button, ButtonGroup, CardHeader, Col, Container, Row } from 'reactstrap';
-import database from './firebase';
+import database from '../../firebase/datalabs';
 
 
 const LabsBody = () => {

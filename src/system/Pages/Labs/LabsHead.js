@@ -1,6 +1,6 @@
 import React from 'react';
 import Nav from '../Nav';
-// import './labs.scss';
+import './labs.scss';
 
 export default function Labs() {
     return (

@@ -1,6 +1,11 @@
 import React from 'react'
 import {  BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
+//login
+import Welcome from './avtorizatsiya/Welcome';
+import Login from './avtorizatsiya/signIn/Login';
+import Register from './avtorizatsiya/signUp/Register';
+
 // Pages
 import Home from './system/Pages/Home/Home';
 import Labs from './system/Pages/Labs/App';
@@ -54,8 +59,12 @@ export default function App() {
     <>
       <Router>
         <Switch>
+          {/* avtorizatsiya */}
+          <Route path='/' exact component={Welcome} />
+          <Route path='/' exact component={Login} />
+          <Route path='/' exact component={Register} />
           {/* Pages */}
-          <Route path='/' exact component={Home} />
+          <Route path='/home' exact component={Home} />
           <Route path='/labs' exact component={Labs} />
           <Route path='/about' exact component={About} />
           <Route path='/contact' exact component={Contact} />
