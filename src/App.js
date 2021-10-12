@@ -1,14 +1,17 @@
 import React from 'react'
-import {  BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 //login
 import Welcome from './avtorizatsiya/Welcome';
 import Login from './avtorizatsiya/signIn/Login';
 import Register from './avtorizatsiya/signUp/Register';
+import { AuthProvider } from './avtorizatsiya/Auth';
+import PrivateRoute from './avtorizatsiya/PrivateRoute';
 
 // Pages
 import Home from './system/Pages/Home/Home';
 import Labs from './system/Pages/Labs/App';
+import News from './system/Pages/News/App';
 import About from './system/Pages/About/App';
 import Contact from './system/Pages/Contact/App';
 
@@ -57,15 +60,17 @@ import Contact from './system/Pages/Contact/App';
 export default function App() {
   return (
     <>
+    {/* <AuthProvider> */}
       <Router>
-        <Switch>
+        <div>
           {/* avtorizatsiya */}
-          <Route path='/' exact component={Welcome} />
-          <Route path='/' exact component={Login} />
-          <Route path='/' exact component={Register} />
+          {/* <PrivateRoute exact path="/" component={Welcome} /> */}
+          {/* <Route path="/login" component={Login} /> */}
+          {/* <Route path="/register" component={Register} /> */}
           {/* Pages */}
-          <Route path='/home' exact component={Home} />
+          <Route path='/' exact component={Home} />
           <Route path='/labs' exact component={Labs} />
+          <Route path='/news' exact component={News} />
           <Route path='/about' exact component={About} />
           <Route path='/contact' exact component={Contact} />
           {/* Maktab Labaratoriyalar */}
@@ -109,8 +114,10 @@ export default function App() {
           {/* 9-sinf */}
           {/* 10-sinf */}
           {/* 11-sinf */}
-        </Switch>
+        </div>
       </Router>
+    {/* </AuthProvider> */}
+            
     </>
   );
 }

@@ -36,7 +36,7 @@ export default function Home() {
     return (
         <>  
             <span className="navbar-allPage">
-            <Navbar className={x.join(" ")} light expand="md">
+            <Navbar className={x.join(" ")} light expand="lg">
                 <Link to="/" className="navbar-brand">
                     WEB<b>LAB</b>UZ
                 </Link>
@@ -48,6 +48,9 @@ export default function Home() {
                         </NavItem>
                         <NavItem>
                             <Link to="/labs">Labaratoriyalar</Link>
+                        </NavItem>
+                        <NavItem>
+                            <Link to="/news">Yangiliklar</Link>
                         </NavItem>
                         <NavItem>
                             <Link to="/contact">Muloqot</Link>
